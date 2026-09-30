@@ -1,0 +1,143 @@
+/* Your custom styles go here.
+   Use Bootstrap classes first, and write your own CSS only when you need to. */
+
+/* Your custom styles go here.
+   Use Bootstrap classes first, and write your own CSS only when you need to. */
+
+
+/* ==========================================
+   GENERAL
+========================================== */
+
+body {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+
+/* ==========================================
+   CARDS
+========================================== */
+
+.card {
+    border-radius: 10px;
+}
+
+
+/* ==========================================
+   PHASE 3 - CSS GRID
+========================================== */
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+
+/* ==========================================
+   SUMMARY VALUES
+========================================== */
+
+#totalAmount,
+#expenseCount,
+#highestExpense {
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   TABLE
+========================================== */
+
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+.table th {
+    white-space: nowrap;
+}
+
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.btn-sm {
+    margin-right: 5px;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 992px) {
+
+    .summary-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 576px) {
+
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+
+    #totalAmount,
+    #expenseCount,
+    #highestExpense {
+        font-size: 1.25rem;
+    }
+
+
+    .table {
+        font-size: 0.85rem;
+    }
+
+
+    .btn-sm {
+        margin-bottom: 5px;
+    }
+
+
+    main.container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+}
+
+
+/* ==========================================
+   SORTABLE TABLE HEADERS
+========================================== */
+
+.sortable {
+    cursor: pointer;
+    user-select: none;
+}
+
+.sortable:hover {
+    text-decoration: underline;
+}
+
